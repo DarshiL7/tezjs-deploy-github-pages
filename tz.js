@@ -1,0 +1,1 @@
+onmessage=async function(a){fetch(a.data.url).then(r=>r.blob()).then(r=>new Promise((n,s)=>{const e=new FileReader;e.onloadend=()=>{postMessage({index:a.data.index,url:a.data.url,baseString:e.result}),n(e.result)},e.onerror=s,e.readAsDataURL(r)}))};
