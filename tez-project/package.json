@@ -5,14 +5,11 @@
   "scripts": {
     "dev": "tez dev",
     "build": "tez build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.2",
-    "@tezjs/vue": "0.0.66",
-    "gh-pages": "^4.0.0"
+    "@tezjs/vue": "0.0.66"
   },
   "devDependencies": {
     "@tezjs/cli": "0.0.66",
